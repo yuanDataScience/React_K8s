@@ -21,13 +21,10 @@ import { AuthProvider } from "./contexts/AuthContext"
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      
-      <Route path="login" element={<Login />} />
-     
+      <Route index element={<Home />} />      
+      <Route path="login" element={<Login />} />     
       <Route path="plotly-demo" element={<PlotlyCharts />} />
-      <Route path="d3-demo" element={ <D3Charts />} />
-     
+      <Route path="d3-demo" element={ <D3Charts />} />     
       <Route path="*" element={<NotFound />} />         
     </Route>
   )
